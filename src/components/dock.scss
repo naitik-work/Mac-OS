@@ -13,13 +13,13 @@
     backdrop-filter: blur(5px); //it creates a bg blur effect
 
     .icon{
-        padding: 0.65rem;
+        // padding: 0.65rem;
         border-radius: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         aspect-ratio: 1/1; //The aspect-ratio CSS property allows you to define the desired width-to-height ratio of an element's box.
-        width: 3.22rem;
+        width: 3rem;
 
         transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
 
