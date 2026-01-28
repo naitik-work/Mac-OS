@@ -9,7 +9,7 @@ const App = () => {
       <Dock/>
       <Nav/>
       <MacWindow>
-        <h1>Hello, Mac OS!</h1>
+        <h1>Hello, Mac OS! I am Naitik!</h1>
       </MacWindow>
     </main>
   )
