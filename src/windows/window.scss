@@ -1,7 +1,6 @@
 .window {
-    height: 350px;
-    width: 500px;
-
+    height: 100%;
+    
     background-color: #060606;
     border-radius: 0.75rem;
     overflow: hidden;
@@ -49,5 +48,7 @@
 
 
     }
-
+    .main-content{
+        height: 100%;
+    }
 }

@@ -3,14 +3,13 @@ import './app.scss'
 import Dock from './components/Dock'
 import Nav from './components/Nav'
 import MacWindow from './windows/MacWindow'
+import Github from './windows/Github'
 const App = () => {
   return (
     <main>
-      <Dock/>
       <Nav/>
-      <MacWindow>
-        <h1>Hello, Mac OS! I am Naitik!</h1>
-      </MacWindow>
+      <Dock/>
+      <Github/>
     </main>
   )
 }
