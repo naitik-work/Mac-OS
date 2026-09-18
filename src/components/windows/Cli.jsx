@@ -7,10 +7,10 @@ import { profile, projects } from "../../config/portfolioData";
 
 const portfolioData = {
   ...profile,
-  projects: projects.map((p) => p.title),
+  projects: projects.map((p) => `${p.title} (${p.tags.slice(0, 3).join(", ")})`),
 };
 
-const formatList = (items) => items.map((item) => `- ${item}`).join("\n");
+const formatList = (items) => items.map((item) => `  • ${item}`).join("\n");
 
 const Cli = ({ windowName }) => {
   return (
@@ -18,61 +18,100 @@ const Cli = ({ windowName }) => {
       <div className="cli-window">
         <Terminal
           commands={{
-            // help: {
-            //   description: "List all available commands.",
-            //   usage: "help",
-            //   fn: () =>
-            //     [
-            //       "Available commands:",
-            //       "  about      Show portfolio summary",
-            //       "  skills     List technologies and tools",
-            //       "  projects   Show featured projects",
-            //       "  contact    Display contact information",
-            //       "  resume     Show a short experience summary",
-            //       "  help       Display this command list",
-            //       "  echo       Print a custom message",
-            //     ].join("\n"),
-            // },
+            whoami: {
+              description: "Print current user information.",
+              usage: "whoami",
+              fn: () => `${portfolioData.name}\n${portfolioData.role}`,
+            },
             about: {
               description: "Show portfolio summary.",
               usage: "about",
               fn: () =>
                 [
                   `${portfolioData.name} | ${portfolioData.role}`,
-                  `${portfolioData.bio}`,
+                  "",
+                  portfolioData.bio,
+                  "",
+                  `Education: ${portfolioData.education.degree} - ${portfolioData.education.institution} (${portfolioData.education.period})`,
+                  `Current Role: ${portfolioData.experience.role} @ ${portfolioData.experience.organization} (${portfolioData.experience.mode})`,
                   `Location: ${portfolioData.location}`,
                 ].join("\n"),
             },
             skills: {
               description: "List technologies and tools.",
               usage: "skills",
-              fn: () => `Core stack:\n${formatList(portfolioData.skills)}`,
+              fn: () =>
+                [
+                  "Technical Skills:",
+                  `  Languages : ${portfolioData.skillCategories.languages.join(", ")}`,
+                  `  Frontend  : ${portfolioData.skillCategories.frontend.join(", ")}`,
+                  `  Backend   : ${portfolioData.skillCategories.backend.join(", ")}`,
+                  `  Database  : ${portfolioData.skillCategories.database.join(", ")}`,
+                  `  AI & LLM  : ${portfolioData.skillCategories.aiLlm.join(", ")}`,
+                  `  Security  : ${portfolioData.skillCategories.security.join(", ")}`,
+                  `  Core CS   : ${portfolioData.skillCategories.coreCs.join(", ")}`,
+                  `  Tools     : ${portfolioData.skillCategories.tools.join(", ")}`,
+                ].join("\n"),
             },
             projects: {
               description: "Show featured projects.",
               usage: "projects",
               fn: () =>
-                `Featured projects:\n${formatList(portfolioData.projects)}`,
+                [
+                  "Featured Projects:",
+                  formatList(portfolioData.projects),
+                  "",
+                  "Type `github` to view full details and repositories.",
+                ].join("\n"),
             },
             contact: {
               description: "Display contact information.",
               usage: "contact",
               fn: () =>
                 [
-                  `Email: ${portfolioData.email}`,
-                  `GitHub: ${portfolioData.github}`,
-                  `LinkedIn: ${portfolioData.linkedin}`,
+                  "Contact Information:",
+                  `  Email    : ${portfolioData.email}`,
+                  `  Phone    : ${portfolioData.phone}`,
+                  `  GitHub   : ${portfolioData.github}`,
+                  `  LinkedIn : ${portfolioData.linkedin}`,
+                  `  Portfolio: ${portfolioData.portfolio}`,
+                ].join("\n"),
+            },
+            education: {
+              description: "Show academic background.",
+              usage: "education",
+              fn: () =>
+                [
+                  `${portfolioData.education.institution}`,
+                  `Degree : ${portfolioData.education.degree}`,
+                  `Period : ${portfolioData.education.period}`,
+                  `CGPA   : ${portfolioData.education.cgpa}`,
+                  `City   : ${portfolioData.education.location}`,
+                ].join("\n"),
+            },
+            experience: {
+              description: "Show current experience & apprenticeship.",
+              usage: "experience",
+              fn: () =>
+                [
+                  `${portfolioData.experience.role}`,
+                  `${portfolioData.experience.organization} (${portfolioData.experience.mode})`,
+                  "",
+                  portfolioData.experience.description,
                 ].join("\n"),
             },
             resume: {
-              description: "Show a short experience summary.",
+              description: "Show verified education & experience summary.",
               usage: "resume",
               fn: () =>
                 [
-                  "Experience:",
-                  "- 3+ years building user-friendly web interfaces",
-                  "- Focused on React, responsive design, and product UX",
-                  "- Worked across landing pages, dashboards, and portfolio products",
+                  `${portfolioData.name} — Resume Overview`,
+                  "----------------------------------------",
+                  `Role       : ${portfolioData.role}`,
+                  `Status     : ${portfolioData.experience.role} (${portfolioData.experience.organization})`,
+                  `Degree     : ${portfolioData.education.degree} (CGPA: ${portfolioData.education.cgpa})`,
+                  `University : ${portfolioData.education.institution}`,
+                  `Resume PDF : ${portfolioData.resumeUrl}`,
                 ].join("\n"),
             },
             echo: {
@@ -82,9 +121,9 @@ const Cli = ({ windowName }) => {
             },
           }}
           welcomeMessage={
-            "Welcome to Hamza's Portfolio Terminal\nType 'help' to see all available commands."
+            "Welcome to Naitik's Portfolio Terminal\nType 'help' to see all available commands."
           }
-          promptLabel={"hamza:~$"}
+          promptLabel={"naitik:~$"}
           promptLabelStyle={{ color: "#00ff00" }}
         />
       </div>

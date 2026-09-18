@@ -30,7 +30,7 @@ const defaultMinimizedState = {
 const defaultNotifications = [
   {
     id: "welcome",
-    title: "Welcome to Hamza's Portfolio",
+    title: "Welcome to Naitik's Portfolio",
     body: "Poke around the desktop — everything here is a real, working window.",
     time: "Just now",
   },

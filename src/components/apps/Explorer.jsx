@@ -94,7 +94,7 @@ const Explorer = ({ windowName }) => {
           </div>
 
           <div className="breadcrumb-path">
-            <span>{isWindows ? "This PC" : "Hamza's Mac"}</span>
+            <span>{isWindows ? "This PC" : "Naitik's Mac"}</span>
             <span>›</span>
             <strong>{currentFolder.name}</strong>
           </div>

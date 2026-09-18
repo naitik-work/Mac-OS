@@ -145,7 +145,7 @@ const AIChatAssistant = () => {
       <form className="ai-input-area" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder={isWindows ? "Ask Copilot anything about Hamza..." : "Ask Siri anything..."}
+          placeholder={isWindows ? "Ask Copilot anything about Naitik..." : "Ask Siri anything about Naitik..."}
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />

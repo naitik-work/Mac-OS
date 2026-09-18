@@ -1,108 +1,63 @@
 [
   {
     "id": 1,
-    "image": "/project_img/ai-career-coach.png",
-    "title": "AI Career Coach",
-    "description": "An AI-powered career preparation platform that analyzes a user's resume, self-description, and target job description to identify skill gaps and generate personalized interview preparation.",
+    "image": "/project_img/querymind.png",
+    "title": "QueryMind",
+    "description": "An AI-powered research assistant built with the MERN stack, LangChain, and Mistral AI, designed for context-aware conversations and research workflows. Features persistent chat history, secure authentication with two-step verification via OTP, persistent message storage, Nodemailer workflows, AI agents with tool calling, internet-assisted querying, and context-aware responses.",
     "tags": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Gemini AI",
-      "JWT"
+      "MERN Stack",
+      "LangChain",
+      "Mistral AI",
+      "AI Agents",
+      "Tool Calling",
+      "OTP Auth"
     ],
-    "repoLink": "https://github.com/hamzaKhan2004/AI-Career-Coach",
-    "demoLink": "https://ai-career-coach-xcz3.onrender.com"
+    "repoLink": "https://github.com/naitik-work/QueryMind",
+    "demoLink": ""
   },
   {
     "id": 2,
-    "image": "/project_img/blog-app.png",
-    "title": "Blog App",
-    "description": "A MERN-based blogging application for creating and managing dynamic blog content.",
+    "image": "/project_img/pulseclass.png",
+    "title": "PulseClass",
+    "description": "A real-time classroom engagement platform enabling instructors to create rooms and students to participate anonymously in interactive sessions. Features instructor room creation, anonymous student participation, preset questions, keyboard-triggered live polls, real-time response tracking, live statistics, Socket.io communication, and JWT authentication.",
     "tags": [
-      "React",
+      "React.js",
       "Node.js",
-      "Express",
-      "MongoDB"
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "JWT"
     ],
-    "repoLink": "https://github.com/hamzaKhan2004/Blog-App",
-    "demoLink": "https://blog-app-az61.onrender.com"
+    "repoLink": "https://github.com/naitik-work/PulseClass",
+    "demoLink": ""
   },
   {
     "id": 3,
-    "image": "/project_img/primecall.png",
-    "title": "PrimeCall",
-    "description": "A real-time video calling application built with WebRTC, Socket.io, and the MERN stack. It enables users to communicate through real-time video and audio calls with a responsive interface.",
+    "image": "/project_img/react-ts-ui.png",
+    "title": "React TypeScript UI",
+    "description": "React + TypeScript application using class-based components with structured reusable architecture and a responsive long-form interactive scrolling experience.",
     "tags": [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "WebRTC",
-      "Socket.io"
+      "React.js",
+      "TypeScript",
+      "Class Components",
+      "OOP",
+      "Responsive UI"
     ],
-    "repoLink": "https://github.com/hamzaKhan2004/PrimeCall",
-    "demoLink": "https://primecallfrontend.onrender.com"
+    "repoLink": "https://github.com/naitik-work/ReactUsingTs",
+    "demoLink": ""
   },
   {
     "id": 4,
-    "image": "/project_img/expense-tracker.png",
-    "title": "Expense Tracker",
-    "description": "A full-stack finance management application that allows users to manage personal income and expenses through a web-based interface.",
+    "image": "/project_img/sherystay.png",
+    "title": "SheryStay",
+    "description": "Student-focused platform for discovering verified PGs, hostels, and student services in Bhopal.",
     "tags": [
-      "React",
+      "React.js",
       "Node.js",
-      "Express",
+      "Express.js",
       "MongoDB"
     ],
-    "repoLink": "https://github.com/hamzaKhan2004/Expense-Tracker",
-    "demoLink": "https://expense-tracker-cial.onrender.com"
-  },
-  {
-    "id": 5,
-    "image": "/project_img/planvista-3d.png",
-    "title": "PlanVista 3D",
-    "description": "A web-based application that converts 2D architectural floor plans into interactive 3D models by analyzing blueprints and generating a 3D representation.",
-    "tags": [
-      "React",
-      "JavaScript",
-      "Python",
-      "Flask",
-      "OpenCV",
-      "Blender",
-      "3D"
-    ],
-    "repoLink": "https://github.com/hamzaKhan2004/PlanVista3D",
-    "demoLink": ""
-  },
-  {
-    "id": 5,
-    "image": "/project_img/planvista-roomify.png",
-    "title": "PlanVista Roomify",
-    "description": "A 3D room visualization project focused on creating and exploring interactive interior spaces in the browser.",
-    "tags": [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "3D"
-    ],
-    "repoLink": "https://github.com/hamzaKhan2004/PlanVistaRoomify",
-    "demoLink": ""
-  },
-  {
-    "id": 6,
-    "image": "/project_img/authentication-system.png",
-    "title": "Authentication System",
-    "description": "A secure authentication system implementing access and refresh tokens, refresh-token rotation, HTTP-only cookies, password hashing, session management, and user profile management.",
-    "tags": [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Security"
-    ],
-    "repoLink": "https://github.com/hamzaKhan2004/Authentication-System",
+    "repoLink": "",
     "demoLink": ""
   }
 ]

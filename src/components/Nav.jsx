@@ -8,6 +8,7 @@ import AIChatAssistant from "./shared/AIChatAssistant";
 import ShortcutsModal from "./shared/ShortcutsModal";
 import { IoNotificationsOutline } from "react-icons/io5";
 import { FaSearch, FaQuestionCircle, FaSlidersH, FaRobot } from "react-icons/fa";
+import { profile } from "../config/portfolioData";
 import "./nav.scss";
 
 const Nav = () => {
@@ -33,7 +34,7 @@ const Nav = () => {
           <img src="./navbar-icons/apple.svg" alt="apple" />
         </div>
         <div className="nav-item title-brand">
-          <p>Hamza Khan</p>
+          <p>{profile.name}</p>
         </div>
         <div className="nav-item" onClick={() => openApp("explorer")}>
           <p>Finder</p>

@@ -1,178 +1,164 @@
-// Centralized portfolio data
+// Centralized portfolio data for Naitik Chitransh
 
 export const profile = {
-  name: "Hamza Akil Khan",
-  role: "MERN Stack Developer",
-  initials: "HK",
+  name: "Naitik Chitransh",
+  role: "Software Engineer | MERN Stack Developer",
+  shortRole: "MERN Stack Developer",
+  shortName: "Naitik",
+  initials: "NC",
 
-  bio: "Computer Engineering graduate and MERN Stack Developer focused on building full-stack applications, AI-powered products, secure authentication systems, and interactive web experiences.",
+  bio: "Naitik Chitransh is a Software Engineer and MERN Stack Developer specializing in AI-powered applications, real-time systems, and full-stack web development, with strong foundations in Data Structures & Algorithms, REST APIs, authentication, and scalable web application development.",
 
-  location: "Mumbai, Maharashtra",
-  email: "khanhamzatz@gmail.com",
+  location: "Guna, India",
+  email: "naitikchs16@gmail.com",
+  phone: "+91-7275414177",
 
-  github: "https://github.com/hamzaKhan2004",
-  linkedin: "https://www.linkedin.com/in/hamza-khan-47a604347",
+  github: "https://github.com/naitik-work",
+  linkedin: "https://www.linkedin.com/in/naitik-chitransh-5b3b13270/",
+  portfolio: "https://naitik-portfolio-g42i.onrender.com/",
 
-  resumeUrl: "/Hamza__Resume.pdf",
+  university: "Jaypee University of Engineering and Technology",
+  degree: "B.Tech. in Computer Science and Engineering",
+  educationPeriod: "2023 – 2027",
+  cgpa: "8.0",
+
+  currentRole: "Full-Stack Trainee – Apprenticeship Ongoing",
+  organization: "Sheryians Coding School",
+  workMode: "Remote",
+
+  resumeUrl: "/Naitik_Chitransh_Resume.pdf",
 
   skills: [
     "JavaScript",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "Next.js",
     "TypeScript",
-    "Tailwind CSS",
+    "Python",
     "HTML5",
     "CSS3",
-    "JWT",
+    "React.js",
+    "Redux Toolkit",
+    "Tailwind CSS",
+    "SCSS",
+    "Node.js",
+    "Express.js",
     "REST APIs",
+    "Socket.io",
+    "JWT Authentication",
+    "MongoDB",
+    "Mongoose",
+    "MySQL",
+    "Mistral AI",
+    "LangChain",
+    "AI Agents",
+    "Tool Calling",
     "Git",
     "GitHub",
-    "GSAP",
-    "WebRTC",
-    "Socket.io",
-    "Gemini AI"
+    "Docker",
+    "Postman"
   ],
 
-  experienceYears: "Fresher",
-  projectsShipped: "8+"
-};
+  skillCategories: {
+    languages: ["JavaScript", "TypeScript", "Python", "HTML5", "CSS3"],
+    frontend: ["React.js", "Redux Toolkit", "Tailwind CSS", "SCSS", "Responsive Design"],
+    backend: ["Node.js", "Express.js", "REST APIs", "Socket.io", "JWT Authentication"],
+    database: ["MongoDB", "Mongoose", "MySQL"],
+    aiLlm: ["Mistral AI", "LangChain", "AI Agents", "Tool Calling"],
+    security: ["Two-Step Verification", "OTP", "Nodemailer"],
+    coreCs: ["DSA", "OOP", "DBMS", "Operating Systems"],
+    tools: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Vercel", "Render"]
+  },
 
+  experience: {
+    role: "Full-Stack Trainee – Apprenticeship Ongoing",
+    organization: "Sheryians Coding School",
+    mode: "Remote",
+    description:
+      "Undergoing hands-on training in full-stack development with JavaScript, React.js, Node.js, Express.js, MongoDB, and MERN-stack application architecture. Developing and debugging production-style applications while strengthening expertise in REST APIs, database integration, authentication, responsive UI, and backend development. Leveraging AI-assisted development workflows for requirement analysis, debugging, feature implementation, and development efficiency."
+  },
+
+  education: {
+    institution: "Jaypee University of Engineering and Technology",
+    degree: "B.Tech. in Computer Science and Engineering",
+    period: "2023 – 2027",
+    cgpa: "8.0",
+    location: "Guna, India"
+  },
+
+  experienceYears: "Trainee",
+  projectsShipped: "4+"
+};
 
 export const projects = [
   {
     id: 1,
-    image: "/project_img/ai-career-coach.png",
-
-    title: "AI Career Coach",
-
+    image: "/project_img/querymind.png",
+    title: "QueryMind",
+    subtitle: "AI-Powered Context-Aware Research Assistant",
     description:
-      "An AI-powered career preparation platform that analyzes a user's resume, self-description, and target job description to identify skill gaps and generate personalized interview preparation.",
-
+      "An AI-powered research assistant built with the MERN stack, LangChain, and Mistral AI, designed for context-aware conversations and research workflows. Features persistent chat history, secure authentication with two-step verification via OTP, persistent message storage, Nodemailer workflows, AI agents with tool calling, internet-assisted querying, and context-aware responses.",
     tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "Gemini AI",
-      "JWT"
+      "MERN Stack",
+      "LangChain",
+      "Mistral AI",
+      "AI Agents",
+      "Tool Calling",
+      "OTP Auth",
+      "Nodemailer"
     ],
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/AI-Career-Coach",
-
-    demoLink:
-      "https://ai-career-coach-xcz3.onrender.com"
-  }
-  ,
-
+    repoLink: "https://github.com/naitik-work/QueryMind",
+    demoLink: ""
+  },
   {
     id: 2,
-    image: "/project_img/expense-tracker.png",
-
-    title: "Expense Tracker",
-
+    image: "/project_img/pulseclass.png",
+    title: "PulseClass",
+    subtitle: "Real-Time Classroom Engagement Platform",
     description:
-      "A full-stack finance management application that allows users to manage personal income and expenses through a web-based interface.",
-
+      "A real-time classroom engagement platform enabling instructors to create rooms and students to participate anonymously in interactive sessions. Features instructor room creation, anonymous student participation, preset questions, keyboard-triggered live polls, real-time response tracking, live statistics, Socket.io communication, and JWT authentication.",
     tags: [
-      "React",
+      "React.js",
       "Node.js",
-      "Express",
-      "MongoDB"
+      "Express.js",
+      "MongoDB",
+      "Socket.io",
+      "JWT"
     ],
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Expense-Tracker",
-
-    demoLink:
-      "https://expense-tracker-cial.onrender.com"
+    repoLink: "https://github.com/naitik-work/PulseClass",
+    demoLink: ""
   },
-
   {
     id: 3,
-    image: "/project_img/blog-app.png",
-
-    title: "Blog App",
-
+    image: "/project_img/react-ts-ui.png",
+    title: "React TypeScript UI",
+    subtitle: "Class-Based Interactive Web Application",
     description:
-      "A MERN-based blogging application for creating and managing dynamic blog content.",
-
+      "React + TypeScript application using class-based components with structured reusable architecture and a responsive long-form interactive scrolling experience.",
     tags: [
-      "React",
-      "Node.js",
-      "Express",
-      "MongoDB"
+      "React.js",
+      "TypeScript",
+      "Class Components",
+      "OOP",
+      "Responsive UI"
     ],
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Blog-App",
-
-    demoLink:
-      "https://blog-app-az61.onrender.com"
+    repoLink: "https://github.com/naitik-work/ReactUsingTs",
+    demoLink: ""
   },
   {
     id: 4,
-    title: "PrimeCall",
+    image: "/project_img/sherystay.png",
+    title: "SheryStay",
+    subtitle: "Student PG & Hostel Discovery Platform",
     description:
-      "A real-time video calling application built with WebRTC, Socket.io, and the MERN stack. It enables users to communicate through real-time video and audio calls with a responsive interface.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "WebRTC", "Socket.io"],
-    repoLink: "https://github.com/hamzaKhan2004/PrimeCall",
-    demoLink: "https://primecallfrontend.onrender.com",
-    image: "/project_img/primecall.png"
-  },
-
-  {
-    id: 5,
-    image: "/project_img/planvista-3d.png",
-
-    title: "PlanVista 3D",
-
-    description:
-      "A web-based application that converts 2D architectural floor plans into interactive 3D models by analyzing blueprints and generating a 3D representation.",
-
+      "Student-focused platform for discovering verified PGs, hostels, and student services in Bhopal.",
     tags: [
-      "React",
-      "JavaScript",
-      "Python",
-      "Flask",
-      "OpenCV",
-      "Blender",
-      "3D"
-    ],
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/PlanVista3D",
-
-    demoLink: ""
-  },
-
-  {
-    id: 6,
-    image: "/project_img/authentication-system.png",
-
-    title: "Authentication System",
-
-    description:
-      "A secure authentication system implementing access and refresh tokens, refresh-token rotation, HTTP-only cookies, password hashing, session management, and user profile management.",
-
-    tags: [
+      "React.js",
       "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT",
-      "Security"
+      "Express.js",
+      "MongoDB"
     ],
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Authentication-System",
-
+    repoLink: "",
     demoLink: ""
   }
 ];
-
 
 export default {
   profile,

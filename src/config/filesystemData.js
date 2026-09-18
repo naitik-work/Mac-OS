@@ -19,6 +19,7 @@ export const filesystemData = {
     children: [
       "skills-file",
       "education-file",
+      "experience-file",
       "bio-file"
     ],
   },
@@ -28,12 +29,10 @@ export const filesystemData = {
     name: "Projects",
     type: "folder",
     children: [
-      "proj-ai-career-coach",
-      "proj-planvista-3d",
-      "proj-planvista-roomify",
-      "proj-expense-tracker",
-      "proj-authentication",
-      "proj-blog-app"
+      "proj-querymind",
+      "proj-pulseclass",
+      "proj-react-ts-ui",
+      "proj-sherystay"
     ],
   },
 
@@ -58,10 +57,10 @@ export const filesystemData = {
     children: [
       "email-link",
       "linkedin-link",
-      "github-link"
+      "github-link",
+      "portfolio-link"
     ],
   },
-
 
   // -------------------------
   // DOCUMENTS
@@ -74,10 +73,9 @@ export const filesystemData = {
     icon: "📄",
     opens: "note",
     size: "2 KB",
-    modified: "2026-09-05",
-
+    modified: "2026-09-18",
     content:
-      "Core Skills: JavaScript, React.js, Node.js, Express.js, MongoDB, Next.js, TypeScript, Tailwind CSS, REST APIs, JWT, Git, GitHub, GSAP, WebRTC, Socket.io, Gemini AI"
+      "Languages: JavaScript, TypeScript, Python, HTML5, CSS3\nFrontend: React.js, Redux Toolkit, Tailwind CSS, SCSS, Responsive Design\nBackend: Node.js, Express.js, REST APIs, Socket.io, JWT Authentication\nDatabase: MongoDB, Mongoose, MySQL\nAI & LLM: Mistral AI, LangChain, AI Agents, Tool Calling\nSecurity: Two-Step Verification, OTP, Nodemailer\nCore CS: DSA, OOP, DBMS, Operating Systems\nTools: Git, GitHub, Docker, Postman, VS Code, Vercel, Render"
   },
 
   "education-file": {
@@ -87,10 +85,21 @@ export const filesystemData = {
     icon: "🎓",
     opens: "note",
     size: "2 KB",
-    modified: "2026-09-05",
-
+    modified: "2026-09-18",
     content:
-      "Bachelor of Engineering in Computer Science and Engineering — Viva Institute of Technology, Mumbai — 2026"
+      "Bachelor of Technology in Computer Science and Engineering\nJaypee University of Engineering and Technology, Guna, India\nPeriod: 2023 – 2027 | CGPA: 8.0"
+  },
+
+  "experience-file": {
+    id: "experience-file",
+    name: "Experience.txt",
+    type: "file",
+    icon: "💼",
+    opens: "note",
+    size: "2 KB",
+    modified: "2026-09-18",
+    content:
+      "Full-Stack Trainee – Apprenticeship Ongoing\nSheryians Coding School (Remote)\n\nUndergoing hands-on training in full-stack development with JavaScript, React.js, Node.js, Express.js, MongoDB, and MERN-stack application architecture. Developing and debugging production-style applications while strengthening expertise in REST APIs, database integration, authentication, responsive UI, and backend development. Leveraging AI-assisted development workflows for requirement analysis, debugging, feature implementation, and development efficiency."
   },
 
   "bio-file": {
@@ -100,122 +109,70 @@ export const filesystemData = {
     icon: "📝",
     opens: "note",
     size: "3 KB",
-    modified: "2026-09-05",
-
+    modified: "2026-09-18",
     content:
-      "Hamza Akil Khan is a Computer Engineering graduate and MERN Stack Developer focused on building full-stack applications, AI-powered products, secure authentication systems, and interactive web experiences."
+      "Naitik Chitransh is a Software Engineer and MERN Stack Developer specializing in AI-powered applications, real-time systems, and full-stack web development, with strong foundations in Data Structures & Algorithms, REST APIs, authentication, and scalable web application development."
   },
-
 
   // -------------------------
   // PROJECTS
   // -------------------------
 
-  "proj-ai-career-coach": {
-    id: "proj-ai-career-coach",
-    name: "AI Career Coach",
+  "proj-querymind": {
+    id: "proj-querymind",
+    name: "QueryMind",
     type: "project",
     icon: "🤖",
     opens: "github",
     size: "Directory",
-    modified: "2026-06-07",
-
+    modified: "2026-09-18",
     description:
-      "AI-powered career preparation platform that analyzes resumes, job descriptions, and self-description to generate skill-gap analysis, technical questions, behavioral questions, and personalized preparation roadmaps.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/AI-Career-Coach",
-
-    demoLink:
-      "https://ai-career-coach-xcz3.onrender.com"
+      "An AI-powered research assistant built with the MERN stack, LangChain, and Mistral AI, designed for context-aware conversations and research workflows. Features persistent chat history, secure authentication with two-step verification via OTP, persistent message storage, Nodemailer workflows, AI agents with tool calling, internet-assisted querying, and context-aware responses.",
+    repoLink: "https://github.com/naitik-work/QueryMind",
+    demoLink: ""
   },
 
-  "proj-planvista-3d": {
-    id: "proj-planvista-3d",
-    name: "PlanVista 3D",
+  "proj-pulseclass": {
+    id: "proj-pulseclass",
+    name: "PulseClass",
+    type: "project",
+    icon: "⚡",
+    opens: "github",
+    size: "Directory",
+    modified: "2026-09-18",
+    description:
+      "A real-time classroom engagement platform enabling instructors to create rooms and students to participate anonymously in interactive sessions. Features instructor room creation, anonymous student participation, preset questions, keyboard-triggered live polls, real-time response tracking, live statistics, Socket.io, and JWT authentication.",
+    repoLink: "https://github.com/naitik-work/PulseClass",
+    demoLink: ""
+  },
+
+  "proj-react-ts-ui": {
+    id: "proj-react-ts-ui",
+    name: "React TypeScript UI",
+    type: "project",
+    icon: "⚛️",
+    opens: "github",
+    size: "Directory",
+    modified: "2026-09-18",
+    description:
+      "React + TypeScript application using class-based components with structured reusable architecture and a responsive long-form interactive scrolling experience.",
+    repoLink: "https://github.com/naitik-work/ReactUsingTs",
+    demoLink: ""
+  },
+
+  "proj-sherystay": {
+    id: "proj-sherystay",
+    name: "SheryStay",
     type: "project",
     icon: "🏠",
     opens: "github",
     size: "Directory",
-    modified: "2026-09-04",
-
+    modified: "2026-09-18",
     description:
-      "A web-based application that converts 2D architectural floor plans into interactive 3D models.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/PlanVista3D"
+      "Student-focused platform for discovering verified PGs, hostels, and student services in Bhopal.",
+    repoLink: "",
+    demoLink: ""
   },
-
-  "proj-planvista-roomify": {
-    id: "proj-planvista-roomify",
-    name: "PlanVista Roomify",
-    type: "project",
-    icon: "🛋️",
-    opens: "github",
-    size: "Directory",
-    modified: "2026-03-22",
-
-    description:
-      "A 3D room visualization project for creating and exploring interactive interior spaces.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/PlanVistaRoomify"
-  },
-
-  "proj-expense-tracker": {
-    id: "proj-expense-tracker",
-    name: "Expense Tracker",
-    type: "project",
-    icon: "📊",
-    opens: "github",
-    size: "Directory",
-    modified: "2026-02-13",
-
-    description:
-      "A full-stack MERN application for managing personal income and expenses.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Expense-Tracker",
-
-    demoLink:
-      "https://expense-tracker-cial.onrender.com"
-  },
-
-  "proj-authentication": {
-    id: "proj-authentication",
-    name: "Authentication System",
-    type: "project",
-    icon: "🔐",
-    opens: "github",
-    size: "Directory",
-    modified: "2026-06-16",
-
-    description:
-      "Secure authentication system implementing access tokens, refresh tokens, refresh-token rotation, HTTP-only cookies, password hashing, session management, and user profiles.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Authentication-System"
-  },
-
-  "proj-blog-app": {
-    id: "proj-blog-app",
-    name: "Blog App",
-    type: "project",
-    icon: "📝",
-    opens: "github",
-    size: "Directory",
-    modified: "2025-01-15",
-
-    description:
-      "A MERN-based blogging application for creating and managing dynamic blog content.",
-
-    repoLink:
-      "https://github.com/hamzaKhan2004/Blog-App",
-
-    demoLink:
-      "https://blog-app-az61.onrender.com"
-  },
-
 
   // -------------------------
   // RESUME
@@ -223,15 +180,14 @@ export const filesystemData = {
 
   "resume-pdf": {
     id: "resume-pdf",
-    name: "Hamza__Resume.pdf",
+    name: "Naitik_Chitransh_Resume.pdf",
     type: "pdf",
     icon: "📕",
     opens: "resume",
-    size: "158 KB",
-    modified: "2026-08-16",
-    url: "/Hamza__Resume.pdf",
+    size: "PDF Document",
+    modified: "2026-09-18",
+    url: "/Naitik_Chitransh_Resume.pdf",
   },
-
 
   // -------------------------
   // ABOUT
@@ -244,9 +200,9 @@ export const filesystemData = {
     icon: "📄",
     opens: "note",
     size: "2 KB",
-    modified: "2026-09-05",
+    modified: "2026-09-18",
     content:
-      "I am Hamza Akil Khan, a Computer Engineering graduate and MERN Stack Developer from Mumbai. I enjoy building full-stack applications, AI-powered products, and interactive web experiences."
+      "Naitik Chitransh is a Software Engineer and MERN Stack Developer specializing in AI-powered applications, real-time systems, and full-stack web development, with strong foundations in Data Structures & Algorithms, REST APIs, authentication, and scalable web application development. Currently pursuing B.Tech CSE at Jaypee University of Engineering and Technology (2023 - 2027) with a CGPA of 8.0, and undergoing Full-Stack Trainee apprenticeship at Sheryians Coding School."
   },
 
   "skills-txt": {
@@ -256,12 +212,10 @@ export const filesystemData = {
     icon: "📄",
     opens: "note",
     size: "2 KB",
-    modified: "2026-09-05",
-
+    modified: "2026-09-18",
     content:
-      "JavaScript, React.js, Node.js, Express.js, MongoDB, Next.js, TypeScript, Tailwind CSS, REST APIs, JWT, Git, GitHub, GSAP, WebRTC, Socket.io, Gemini AI"
+      "Languages: JavaScript, TypeScript, Python, HTML5, CSS3\nFrontend: React.js, Redux Toolkit, Tailwind CSS, SCSS, Responsive Design\nBackend: Node.js, Express.js, REST APIs, Socket.io, JWT Authentication\nDatabase: MongoDB, Mongoose, MySQL\nAI & LLM: Mistral AI, LangChain, AI Agents, Tool Calling\nSecurity: Two-Step Verification, OTP, Nodemailer\nCore CS: DSA, OOP, DBMS, Operating Systems\nTools: Git, GitHub, Docker, Postman, VS Code, Vercel, Render"
   },
-
 
   // -------------------------
   // CONTACT
@@ -272,9 +226,9 @@ export const filesystemData = {
     name: "Send Email.url",
     type: "link",
     icon: "✉️",
-    action: "mailto:khanhamzatz@gmail.com",
+    action: "mailto:naitikchs16@gmail.com",
     size: "1 KB",
-    modified: "2026-09-05",
+    modified: "2026-09-18",
   },
 
   "linkedin-link": {
@@ -282,10 +236,9 @@ export const filesystemData = {
     name: "LinkedIn Profile.url",
     type: "link",
     icon: "🔗",
-    action:
-      "https://www.linkedin.com/in/hamza-khan-47a604347",
+    action: "https://www.linkedin.com/in/naitik-chitransh-5b3b13270/",
     size: "1 KB",
-    modified: "2026-09-05",
+    modified: "2026-09-18",
   },
 
   "github-link": {
@@ -293,10 +246,19 @@ export const filesystemData = {
     name: "GitHub Profile.url",
     type: "link",
     icon: "🐙",
-    action:
-      "https://github.com/hamzaKhan2004",
+    action: "https://github.com/naitik-work",
     size: "1 KB",
-    modified: "2026-09-05",
+    modified: "2026-09-18",
+  },
+
+  "portfolio-link": {
+    id: "portfolio-link",
+    name: "Portfolio Website.url",
+    type: "link",
+    icon: "🌐",
+    action: "https://naitik-portfolio-g42i.onrender.com/",
+    size: "1 KB",
+    modified: "2026-09-18",
   },
 };
 

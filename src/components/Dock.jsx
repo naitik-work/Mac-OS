@@ -3,6 +3,8 @@ import "./dock.scss";
 import { CreateWindowContext } from "../context/WindowContext";
 import { FaGlobe, FaFolder, FaCog, FaBriefcase, FaQuestionCircle, FaRobot } from "react-icons/fa";
 
+import { profile } from "../config/portfolioData";
+
 const Dock = () => {
   const { windowState, openApp, setAssistantOpen, setShortcutsModalOpen } =
     useContext(CreateWindowContext);
@@ -50,7 +52,7 @@ const Dock = () => {
       </button>
 
       <button
-        onClick={() => window.open("mailto:hamzakhantz@gmail.com", "_blank")}
+        onClick={() => window.open(`mailto:${profile.email}`, "_blank")}
         className="icon mail"
         title="Mail"
       >
@@ -58,7 +60,7 @@ const Dock = () => {
       </button>
 
       <button
-        onClick={() => window.open("https://www.linkedin.com/in/hamza-khan-47a604347", "_blank")}
+        onClick={() => window.open(profile.linkedin, "_blank")}
         className="icon link"
         title="LinkedIn"
       >

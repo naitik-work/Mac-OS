@@ -30,8 +30,8 @@ const apps = [
 ];
 
 const recommendedItems = [
-  { key: "resume", label: "Hamza_Resume.pdf", desc: "PDF Document • Just now", icon: "📕" },
-  { key: "github", label: "React OS Portfolio", desc: "GitHub Repository • 2h ago", icon: "💻" },
+  { key: "resume", label: "Naitik_Chitransh_Resume.pdf", desc: "PDF Document • Just now", icon: "📕" },
+  { key: "github", label: "QueryMind & PulseClass", desc: "GitHub Repositories • 2h ago", icon: "💻" },
   { key: "note", label: "Skills & Bio.txt", desc: "Text Document • Today", icon: "📄" },
   { key: "hire", label: "Hire Me Card", desc: "Portfolio Profile • Yesterday", icon: "💼" },
 ];

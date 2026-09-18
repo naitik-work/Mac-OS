@@ -6,7 +6,7 @@ export const useAIChat = (openApp) => {
     {
       id: "welcome",
       sender: "ai",
-      text: "Hello! I am your Portfolio AI Assistant. Ask me about Hamza's skills, projects, resume, or how to navigate the portfolio!",
+      text: "Hello! I am your Portfolio AI Assistant. Ask me about Naitik's skills, projects, education, resume, or how to navigate the portfolio!",
       timestamp: new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }),
     },
   ]);
