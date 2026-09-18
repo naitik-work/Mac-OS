@@ -1,0 +1,100 @@
+.hireme-window {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1.8rem 1.6rem;
+  overflow-y: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at 50% 0%, rgba(87, 176, 255, 0.14), transparent 55%), #1c1d21;
+}
+.hireme-avatar {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5c8dff, #8d5dff);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+  box-shadow: 0 12px 30px rgba(87, 176, 255, 0.25);
+}
+.hireme-window h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.15rem;
+}
+.hireme-role {
+  font-size: 0.85rem;
+  color: #9bc7ff;
+  margin-bottom: 0.9rem;
+}
+.hireme-bio {
+  font-size: 0.82rem;
+  opacity: 0.75;
+  line-height: 1.55;
+  max-width: 22rem;
+  margin-bottom: 1.1rem;
+}
+.hireme-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+.hireme-skills span {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+}
+.hireme-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+.hireme-btn {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.hireme-btn:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+.hireme-btn.primary {
+  background: linear-gradient(120deg, #6fb1ff, #b98bff);
+  color: #0b1424;
+  border: none;
+  font-weight: 700;
+}
+
+.hireme-win .hireme-btn {
+  border-radius: 0.35rem;
+}
+.hireme-win .hireme-btn.primary {
+  border-radius: 0.35rem;
+}
+
+// Responsive hireme rules
+@media (max-width: 500px) {
+  .hireme-window {
+    padding: 1.2rem 0.8rem;
+  }
+  .hireme-actions {
+    width: 100%;
+    max-width: 15rem;
+    .hireme-btn {
+      width: 100%;
+    }
+  }
+}

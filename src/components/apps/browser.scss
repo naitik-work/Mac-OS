@@ -1,0 +1,186 @@
+.browser-window {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #17181c;
+  color: #eee;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.browser-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.browser-nav-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+.browser-nav-buttons button {
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ddd;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.browser-nav-buttons button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.browser-nav-buttons button:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+.browser-address-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.78rem;
+  color: #cfd3da;
+}
+.browser-tabs {
+  display: flex;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.browser-tab {
+  border: 0;
+  background: transparent;
+  color: #9aa0ab;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+.browser-tab.active {
+  background: rgba(255, 255, 255, 0.09);
+  color: white;
+}
+.browser-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.5rem 1.8rem;
+}
+.page h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.2rem;
+}
+.page h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.9rem;
+}
+.tagline {
+  opacity: 0.7;
+  margin-bottom: 0.9rem;
+}
+.page-home p {
+  max-width: 34rem;
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.skill-chip {
+  background: rgba(255, 255, 255, 0.09);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13.5rem, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.7rem;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+// Responsive project image handling
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+.project-card h3 {
+  font-size: 0.95rem;
+}
+.project-card p {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  line-height: 1.4;
+}
+.project-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: auto;
+}
+.project-links a {
+  color: #7fb2ff;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.page-about ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+.page-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+.page-contact a {
+  color: #7fb2ff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Safari skin */
+.browser-safari .browser-chrome {
+  background: rgba(40, 40, 44, 0.9);
+}
+.browser-safari .browser-address-bar {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Edge skin */
+.browser-edge {
+  background: #202124;
+}
+.browser-edge .browser-chrome {
+  background: #26272b;
+}
+.browser-edge .browser-address-bar {
+  border-radius: 0.4rem;
+  background: #1c1d20;
+}
+.browser-edge .browser-nav-buttons button {
+  border-radius: 0.35rem;
+}
+.browser-edge .browser-tab.active {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: #202124;
+}

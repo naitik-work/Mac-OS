@@ -1,5 +1,5 @@
 {
-  "name": "mac-os",
+  "name": "mac-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,11 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.19.0",
+    "gsap": "^3.12.5",
     "react": "^19.2.0",
+    "react-console-emulator": "^5.0.2",
     "react-dom": "^19.2.0",
-    "react-rnd": "^10.5.2",
-    "rnd": "^1.0.10",
-    "sass": "^1.97.3"
+    "react-icons": "^5.2.1",
+    "react-markdown": "^10.1.0",
+    "react-pdf": "^10.4.1",
+    "react-rnd": "^10.5.3",
+    "react-syntax-highlighter": "^16.1.1",
+    "sass": "^1.102.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -25,9 +31,6 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "vite": "npm:rolldown-vite@7.2.5"
-  },
-  "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "^7.2.4"
   }
 }

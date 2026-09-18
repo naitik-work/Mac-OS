@@ -1,0 +1,116 @@
+.desktop-widgets {
+  position: absolute;
+  top: 4.2rem;
+  right: 1.1rem;
+  z-index: 15;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 12.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: white;
+}
+.widgets-windows {
+  top: 1.1rem;
+}
+.widget-card {
+  background: rgba(24, 24, 28, 0.42);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.9rem;
+  backdrop-filter: blur(14px);
+  padding: 0.75rem 0.9rem;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.22);
+  cursor: default;
+}
+.widget-clock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.widget-time {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.widget-date {
+  font-size: 0.72rem;
+  opacity: 0.75;
+}
+.widget-weather {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.widget-weather-icon {
+  font-size: 1.6rem;
+}
+.widget-weather strong {
+  font-size: 0.95rem;
+  display: block;
+}
+.widget-weather small {
+  font-size: 0.65rem;
+  opacity: 0.65;
+}
+.widget-projects,
+.widget-profile {
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.widget-projects:hover,
+.widget-profile:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+.widget-projects strong {
+  font-size: 1.35rem;
+  display: block;
+}
+.widget-projects small {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+.widget-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.widget-avatar {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #5c8dff, #8d5dff);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+.widget-profile strong {
+  display: block;
+  font-size: 0.82rem;
+}
+.widget-profile small {
+  font-size: 0.68rem;
+  opacity: 0.7;
+}
+.widget-hire {
+  border: 0;
+  font: inherit;
+  text-align: left;
+  color: #0b1424;
+  font-weight: 700;
+  font-size: 0.82rem;
+  background: linear-gradient(120deg, #6fb1ff, #b98bff);
+  cursor: pointer;
+  transition: transform 0.18s ease;
+}
+.widget-hire:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .desktop-widgets {
+    display: none;
+  }
+}

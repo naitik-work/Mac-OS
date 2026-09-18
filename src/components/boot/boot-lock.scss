@@ -1,0 +1,188 @@
+.boot-screen,
+.lock-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  user-select: none;
+}
+
+/* ---------- BOOT ---------- */
+.boot-screen {
+  flex-direction: column;
+}
+.boot-mac {
+  background: #000000;
+}
+.boot-windows {
+  background: #070d18;
+}
+.boot-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.boot-logo {
+  display: grid;
+  place-items: center;
+  height: 4.5rem;
+}
+.boot-apple-logo {
+  width: 3.5rem;
+  filter: invert(1);
+  opacity: 0.95;
+}
+.boot-windows-logo {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+}
+.boot-windows-logo i {
+  display: block;
+  background: #0078d4;
+  border-radius: 1px;
+}
+.boot-progress {
+  width: 13rem;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+.boot-progress-fill {
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  border-radius: 999px;
+}
+.boot-hint {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+/* ---------- LOCK ---------- */
+.lock-screen {
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+}
+.lock-mac {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55)),
+    url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80");
+  justify-content: center;
+}
+.lock-clock-mac {
+  font-size: clamp(3.5rem, 9vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+.lock-date-mac {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  margin-top: 0.4rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.lock-user-mac {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.2rem 2rem;
+  border-radius: 1.25rem;
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+.lock-avatar-mac {
+  width: 4.4rem;
+  height: 4.4rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.35);
+}
+.lock-user-mac span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.lock-user-mac small {
+  opacity: 0.65;
+  font-size: 0.78rem;
+}
+
+.lock-windows {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(57, 120, 255, 0.28), transparent 32%),
+    radial-gradient(circle at 80% 75%, rgba(104, 58, 190, 0.22), transparent 38%),
+    linear-gradient(135deg, #07121f 0%, #102b4a 45%, #111d39 100%);
+  justify-content: space-between;
+  padding: 3.5rem 2rem;
+}
+.lock-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 1rem;
+}
+.lock-clock {
+  font-size: clamp(3.2rem, 8vw, 5.4rem);
+  font-weight: 600;
+  line-height: 1;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+.lock-date {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin-top: 0.3rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.lock-hint-windows {
+  font-size: 0.9rem;
+  opacity: 0.75;
+}
+.lock-user-windows {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  font-size: 0.9rem;
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+.lock-avatar {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.75rem;
+}

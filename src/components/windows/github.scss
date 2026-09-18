@@ -1,0 +1,90 @@
+.cards {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    padding: 1.25rem;
+    padding-bottom: 6rem;
+
+    .card {
+        flex-grow: 1;
+        flex-basis: 18rem;
+        max-width: 26rem;
+        width: 100%;
+        padding: 1rem;
+        color: rgb(245, 245, 245);
+        background-color: #1c1c1c;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 0.75rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        text-align: left;
+        gap: 0.85rem;
+
+        // Responsive project image handling
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 220px;
+            aspect-ratio: 16 / 9;
+            object-fit: contain;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .description {
+            opacity: 0.8;
+            font-size: 0.85rem;
+            line-height: 1.45;
+            margin: 0;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+
+            .tag {
+                background-color: #2a2d2b;
+                padding: 0.25rem 0.65rem;
+                border-radius: 0.5rem;
+                font-size: 0.75rem;
+                white-space: nowrap;
+                margin: 0;
+            }
+        }
+
+        .urls {
+            display: flex;
+            gap: 0.85rem;
+            margin-top: auto;
+            padding-top: 0.5rem;
+
+            a {
+                color: #60a5fa;
+                font-size: 0.82rem;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
